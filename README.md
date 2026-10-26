@@ -1,8 +1,8 @@
 # You're in a cave — TryHackMe
 
-Writeup for the TryHackMe room **[You're in a cave](https://tryhackme.com/room/youreinacave)**.
+EN - Writeup for the TryHackMe room **[You're in a cave](https://tryhackme.com/room/youreinacave)**.
 
-Writeup da room **[You're in a cave](https://tryhackme.com/room/youreinacave)** do TryHackMe.
+PT - Writeup da room **[You're in a cave](https://tryhackme.com/room/youreinacave)** do TryHackMe.
 
 | | |
 |---|---|
@@ -37,9 +37,9 @@ XXE  →  Java deserialization (RCE)  →  SSH brute-force  →  GPG
 
 ## Note on flags / Nota sobre as flags
 
-**EN** — Flags, passwords and the passphrase are **redacted** in this writeup, following TryHackMe's Acceptable Use Policy (publishing answers/solutions for active content is not allowed; writeups are for retired content only). Confirm the room is retired before publishing. The goal here is the method, not the answers.
+**EN** — Flags, passwords and the passphrase are **redacted** in this writeup, following TryHackMe's Acceptable Use Policy (publishing answers/solutions for active content is not allowed; writeups are for retired content only). 
 
-**PT** — Flags, senhas e a passphrase estão **ofuscadas** neste writeup, seguindo a Acceptable Use Policy do TryHackMe (publicar respostas/soluções de conteúdo ativo não é permitido; writeups são apenas para conteúdo aposentado). Confirme que a room está aposentada antes de publicar. O foco aqui é o método, não as respostas.
+**PT** — Flags, senhas e a passphrase estão **ofuscadas** neste writeup, seguindo a Acceptable Use Policy do TryHackMe (publicar respostas/soluções de conteúdo ativo não é permitido; writeups são apenas para conteúdo aposentado). 
 
 ---
 
