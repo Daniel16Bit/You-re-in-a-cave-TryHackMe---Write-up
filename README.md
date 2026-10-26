@@ -1,8 +1,8 @@
 # You're in a cave — TryHackMe
 
-EN - Writeup for the TryHackMe room **[You're in a cave](https://tryhackme.com/room/youreinacave)**.
+Writeup for the TryHackMe room **[You're in a cave](https://tryhackme.com/room/youreinacave)**.
 
-PT - Writeup da room **[You're in a cave](https://tryhackme.com/room/youreinacave)** do TryHackMe.
+Writeup da room **[You're in a cave](https://tryhackme.com/room/youreinacave)** do TryHackMe.
 
 | | |
 |---|---|
@@ -13,11 +13,22 @@ PT - Writeup da room **[You're in a cave](https://tryhackme.com/room/youreinacav
 
 ---
 
+## Read it / Leia
+
+| Language / Idioma | File / Arquivo |
+|-------------------|----------------|
+| 🇧🇷 Português | **[`writeup/writeup-pt-br.md`](writeup/writeup-pt-br.md)** |
+| 🇬🇧 English | **[`writeup/writeup-en.md`](writeup/writeup-en.md)** |
+
+Screenshots: [`images/`](images/)
+
+---
+
 ## About / Sobre
 
-**EN** — A text-RPG style room: a TCP service on port 3333 takes "actions" as if it were a game, and that is where exploitation begins. The chain goes from arbitrary file read all the way to root on the machine's host.
+**EN** — A text-RPG style room: a TCP service on port 3333 takes "actions" as if it were a game, and that is where exploitation begins. The chain goes from arbitrary file read all the way to root on the machine's host. The writeup explains the *reasoning* behind each step — why `nc`, how the XXE was found and tested, and every pitfall that can silently waste hours.
 
-**PT** — Room no estilo RPG de texto: um serviço TCP na porta 3333 recebe "ações" como se fosse um jogo, e é por ele que a exploração começa. A cadeia vai de leitura de arquivos até root no host da máquina.
+**PT** — Room no estilo RPG de texto: um serviço TCP na porta 3333 recebe "ações" como se fosse um jogo, e é por ele que a exploração começa. A cadeia vai de leitura de arquivos até root no host da máquina. O writeup explica o *raciocínio* por trás de cada passo — por que `nc`, como o XXE foi achado e testado, e cada beco que pode custar horas em silêncio.
 
 **Exploitation chain / Cadeia de exploração:**
 
@@ -28,18 +39,11 @@ XXE  →  Java deserialization (RCE)  →  SSH brute-force  →  GPG
 
 ---
 
-## Contents / Conteúdo
-
-- **[`writeup/writeup-cave.md`](writeup/writeup-cave.md)** — full step-by-step writeup with the reasoning behind each stage / writeup completo, passo a passo, com o porquê de cada etapa
-- **[`images/`](images/)** — screenshots
-
----
-
 ## Note on flags / Nota sobre as flags
 
-**EN** — Flags, passwords and the passphrase are **redacted** in this writeup, following TryHackMe's Acceptable Use Policy (publishing answers/solutions for active content is not allowed; writeups are for retired content only). 
+**EN** — Flags, passwords and the passphrase are **redacted** (`████`), following TryHackMe's Acceptable Use Policy: publishing answers/solutions for active content is not allowed; writeups are for retired content only. Confirm the room is retired before publishing. The goal here is the method, not the answers.
 
-**PT** — Flags, senhas e a passphrase estão **ofuscadas** neste writeup, seguindo a Acceptable Use Policy do TryHackMe (publicar respostas/soluções de conteúdo ativo não é permitido; writeups são apenas para conteúdo aposentado). 
+**PT** — Flags, senhas e a passphrase estão **ofuscadas** (`████`), seguindo a Acceptable Use Policy do TryHackMe: publicar respostas/soluções de conteúdo ativo não é permitido; writeups são apenas para conteúdo aposentado. Confirme que a room está aposentada antes de publicar. O foco aqui é o método, não as respostas.
 
 ---
 
