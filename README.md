@@ -1,6 +1,7 @@
 # You're in a cave — TryHackMe
 
 Writeup for the TryHackMe room **[You're in a cave](https://tryhackme.com/room/youreinacave)**.
+
 Writeup da room **[You're in a cave](https://tryhackme.com/room/youreinacave)** do TryHackMe.
 
 | | |
